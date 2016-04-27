@@ -1,0 +1,23 @@
+{
+  "name": "bankstatementparse",
+  "version": "0.0.1",
+  "description": "utility to be used for parsing Nordea exported bank statement CSV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amandeep Midha",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "csv": "^0.4.6",
+    "date-format-lite": "^0.7.4",
+    "fs": "0.0.2",
+    "iconv-lite": "^0.4.13",
+    "node-csv": "^0.1.2",
+    "node-rules": "^3.0.3",
+    "random-js": "^1.0.8",
+    "rethinkdb": "^2.3.1",
+    "underscore": "^1.8.3"
+  }
+}
