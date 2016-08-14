@@ -32,8 +32,16 @@ func arry2string( values[]int64) (string) {
 	return buffer.String()
 }
 
-func string2int64array (str string) ([]string) {
+func string2int64array (str string) ([]int64) {
 
-	return strings.Split(str,",")
+	var output = []int64{}
 
+	input := strings.Split(str,",")
+	input = input[1:len(input)-1]
+
+	for _, i := range input {
+		j, _ := strconv.ParseInt(i, 10, 64)
+		output = append(output,j)
+	}
+	return output
 }
